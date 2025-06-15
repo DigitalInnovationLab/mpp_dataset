@@ -26,7 +26,7 @@ print(df.shape)
 # Define feature and label columns
 X, y = df.iloc[:, :-1], df.iloc[:, -1]
 
-# Normalize features
+# Standardize features
 X_scaled = StandardScaler().fit_transform(X)
 
 # Split dataset
